@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-lang="home_page-title">AIBS</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="#main" class="header__logo-link">
+						<img class="header__logo-img" src="./img/header/logo.png"
+							alt="Логотип компании Artificial Intelligence Business Solutions">
+						<img class="header__logo-img2" src="./img/header/logo-small.png"
+							alt="Логотип компании Artificial Intelligence Business Solutions">
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#about" data-lang="about" class="menu__link">О компании</a>
+							</li>
+							<li class="menu__item">
+								<a href="#advantages" data-lang="prevences" class="menu__link">Преимушества</a>
+							</li>
+							<li class="menu__item">
+								<a href="#services" data-lang="services" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="#cases" data-lang="cases" class="menu__link">Кейсы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#faq" data-lang="faq" class="menu__link">FAQ</a>
+							</li>
+						</ul>
+						<ul class="menu__socials">
+							<li class="menu__social">
+								<a href="#" class="menu__link">
+									<svg width="37" height="27" viewBox="0 0 37 27" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M36.7059 21.9782C35.8436 19.9906 34.7072 18.1749 33.3405 16.6008C32.8834 16.0096 32.4047 15.4406 31.9059 14.8954L31.8456 14.8283C31.6604 14.6224 31.4776 14.4138 31.2971 14.2024C33.1655 11.229 34.7642 8.04554 36.0687 4.70125L36.121 4.567L36.1574 4.42549C36.3302 3.76692 36.5268 2.5151 35.8293 1.38302C35.1064 0.214651 33.9508 0.00419978 33.1756 0.00419978H29.6136C28.8678 -0.034699 28.1303 0.197413 27.5067 0.667318C26.8832 1.13722 26.4055 1.82084 26.142 2.62033C25.3754 4.70967 24.4156 6.69912 23.2791 8.55468V3.77781C23.2791 3.16097 23.2283 2.12685 22.6497 1.25602C21.9586 0.211023 20.9583 0.00419978 20.264 0.00419978H14.611C13.8734 -0.0152246 13.1575 0.290779 12.6115 0.858839C12.0656 1.4269 11.7315 2.2135 11.6784 3.05574L11.6736 3.13738V3.21902C11.6736 4.09893 11.978 4.74842 12.2221 5.15662C12.3315 5.33986 12.4472 5.50677 12.5217 5.612L12.5376 5.63558C12.6168 5.74806 12.6691 5.82245 12.7214 5.9059C12.8609 6.11998 13.0591 6.4538 13.1162 7.31375V9.98612C11.9814 7.81143 11.051 5.50539 10.3404 3.10654L10.3278 3.06663L10.3151 3.02853C10.1217 2.44979 9.81255 1.60798 9.19273 0.965744C8.46987 0.212837 7.61384 0.00419978 6.8355 0.00419978H3.22118C2.43332 0.00419978 1.48377 0.214652 0.775176 1.06916C0.0792613 1.91096 0 2.91967 0 3.45306V3.69617L0.0443863 3.93202C1.04514 9.24913 3.10742 14.2291 6.06983 18.4822C7.42421 20.9265 9.26293 22.9711 11.4369 24.4501C13.6108 25.929 16.0587 26.8008 18.582 26.9946L18.647 27H18.7136C19.8645 27 21.0645 26.8857 21.9665 26.1981C23.1824 25.2692 23.2791 23.845 23.2791 23.1339V21.0693C23.5913 21.3595 23.9781 21.7478 24.4521 22.2703C25.026 22.927 25.4825 23.4967 25.8741 23.9938L26.0833 24.2587C26.3877 24.6469 26.6873 25.0297 26.96 25.3436C27.3024 25.7373 27.7256 26.1709 28.2551 26.492C28.8305 26.8385 29.4345 26.9964 30.0749 26.9964H33.6908C34.4533 26.9964 35.5455 26.7895 36.3144 25.7699C37.1514 24.6596 37.088 23.2971 36.8248 22.3193L36.7773 22.1433L36.7059 21.9782ZM27.6384 22.1705C27.1471 21.542 26.6413 20.9285 26.1214 20.3309L26.1166 20.3254C23.9655 17.9524 22.962 17.5406 22.2518 17.5406C21.873 17.5406 21.456 17.5878 21.185 17.976C21.0629 18.1612 20.9829 18.3781 20.9519 18.6074C20.9137 18.8735 20.8968 19.1432 20.9012 19.4129V23.1339C20.9012 23.5965 20.8346 23.7906 20.6476 23.9321C20.3987 24.1226 19.8676 24.2768 18.7279 24.2768C16.5628 24.1082 14.4636 23.3539 12.6028 22.076C10.7421 20.798 9.17295 19.0328 8.02442 16.9256L8.01174 16.902L7.99588 16.8802C5.23619 12.949 3.31288 8.33742 2.37784 3.40952C2.38418 3.17367 2.42857 3.03034 2.50149 2.94326C2.57599 2.85255 2.75829 2.72555 3.22118 2.72555H6.8355C7.23656 2.72555 7.44581 2.82715 7.59641 2.98136C7.76444 3.15915 7.91345 3.4585 8.091 3.99189C8.97873 6.97812 10.1772 9.77203 11.3138 11.8239C11.8813 12.8508 12.4393 13.7053 12.9434 14.3094C13.1954 14.6106 13.4411 14.861 13.6773 15.0388C13.904 15.2093 14.1624 15.3454 14.4287 15.3454C14.5682 15.3454 14.7315 15.3272 14.8885 15.2492C15.0579 15.1635 15.1975 15.0153 15.2848 14.8283C15.448 14.4872 15.494 13.9847 15.494 13.3261V7.20671C15.41 5.72266 15.0184 4.8863 14.638 4.29305C14.5609 4.17439 14.4817 4.05764 14.4002 3.9429L14.3796 3.91387C14.312 3.8199 14.2475 3.72308 14.1862 3.6236C14.1082 3.51265 14.0612 3.37734 14.0515 3.23535C14.0639 3.09119 14.124 2.95791 14.2195 2.8628C14.315 2.76769 14.4386 2.71794 14.5651 2.72374H20.264C20.5905 2.72374 20.6999 2.81445 20.7554 2.89972C20.8346 3.01764 20.9012 3.26256 20.9012 3.77781V11.9927C20.9012 12.9687 21.2944 13.6291 21.865 13.6291C22.5213 13.6291 22.9953 13.1737 23.8228 12.2267L23.8371 12.2086L23.8497 12.1922C25.706 9.60201 27.2226 6.7161 28.3518 3.62541L28.3581 3.60364C28.443 3.33057 28.6036 3.09677 28.8154 2.9379C29.0272 2.77903 29.2786 2.70382 29.5312 2.72374H33.1772C33.6718 2.72374 33.8335 2.86888 33.8874 2.95414C33.9429 3.04486 33.9825 3.23898 33.8874 3.61997C32.5853 6.95155 30.9756 10.1142 29.0857 13.054L29.0731 13.0758C28.8908 13.3969 28.6894 13.7525 28.6609 14.1589C28.6292 14.5979 28.7941 14.9952 29.0842 15.4234C29.295 15.779 29.7309 16.267 30.1732 16.7623L30.2144 16.8094C30.6773 17.3283 31.1798 17.8907 31.5825 18.435L31.5936 18.4477L31.6047 18.4622C32.8053 19.8328 33.8038 21.4173 34.5611 23.1538C34.6816 23.6255 34.6087 23.8686 34.5136 23.9938C34.4042 24.139 34.1585 24.275 33.6924 24.275H30.0749C29.8284 24.2819 29.5844 24.2163 29.3663 24.0845C29.0991 23.9066 28.8565 23.684 28.6466 23.4241C28.4199 23.1647 28.1742 22.8508 27.873 22.468L27.64 22.1705H27.6384Z"
+											fill="#EEFFF1" />
+									</svg>
+								</a>
+							</li>
+							<li class="menu__social">
+								<a href="#" class="menu__link">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25.9271 0.00286689C25.5813 0.0308752 25.2419 0.121191 24.9221 0.27029H24.9178C24.6108 0.4058 23.1512 1.08935 20.9323 2.12546L12.9806 5.85379C7.27481 8.52802 1.66598 11.1615 1.66598 11.1615L1.73277 11.1327C1.73277 11.1327 1.34607 11.2742 0.942126 11.5824C0.692576 11.7592 0.477837 11.9905 0.310904 12.2624C0.112705 12.5861 -0.0467164 13.0814 0.012528 13.5935C0.109473 14.4593 0.613589 14.9786 0.975518 15.2652C1.34176 15.5554 1.69076 15.6909 1.69076 15.6909H1.69938L6.9592 17.6636C7.1951 18.5066 8.56203 23.5097 8.89057 24.6621C9.08446 25.3505 9.27296 25.781 9.50886 26.1096C9.62304 26.2775 9.75661 26.4178 9.91711 26.5305C10.0005 26.5845 10.0895 26.6272 10.1821 26.6576L10.1282 26.6432C10.1444 26.648 10.1573 26.6624 10.1692 26.6672C10.2123 26.6804 10.2413 26.6852 10.2963 26.6948C11.1289 26.9754 11.7979 26.3998 11.7979 26.3998L11.8356 26.3662L14.941 23.2183L20.1459 27.6638L20.2644 27.7201C21.3491 28.2502 22.4478 27.9552 23.0284 27.4347C23.6133 26.9107 23.8406 26.2403 23.8406 26.2403L23.8783 26.1324L27.9005 3.19276C28.0147 2.62673 28.0437 2.09668 27.9177 1.58222C27.7877 1.06156 27.4877 0.613751 27.0764 0.326652C26.7311 0.0929451 26.3307 -0.0198598 25.9271 0.00286689ZM25.8183 2.46124C25.814 2.53679 25.8269 2.5284 25.7968 2.6735V2.68669L21.8123 25.3877C21.7951 25.42 21.766 25.4908 21.6863 25.5616C21.6023 25.6359 21.5355 25.6827 21.1854 25.528L14.8193 20.0944L10.9738 23.9966L11.7817 18.2524L22.1829 7.45953C22.6116 7.01582 22.4683 6.92229 22.4683 6.92229C22.4985 6.37785 21.8209 6.76279 21.8209 6.76279L8.70529 15.8084L8.70099 15.7844L2.41462 13.428V13.4232L2.39846 13.4196C2.40948 13.4155 2.42027 13.4107 2.43078 13.4052L2.46525 13.386L2.49864 13.3728C2.49864 13.3728 8.11177 10.7394 13.8175 8.06513C16.6742 6.72562 19.5524 5.37651 21.766 4.3356C23.0788 3.72041 24.3929 3.10881 25.7084 2.50081C25.7968 2.46244 25.7548 2.46124 25.8183 2.46124Z"
+											fill="#EEFFF1" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<div class="actions-header__socials">
+						<a href="#" class="actions-header__social">
+							<svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M36.7059 21.9782C35.8436 19.9906 34.7072 18.1749 33.3405 16.6008C32.8834 16.0096 32.4047 15.4406 31.9059 14.8954L31.8456 14.8283C31.6604 14.6224 31.4776 14.4138 31.2971 14.2024C33.1655 11.229 34.7642 8.04554 36.0687 4.70125L36.121 4.567L36.1574 4.42549C36.3302 3.76692 36.5268 2.5151 35.8293 1.38302C35.1064 0.214651 33.9508 0.00419978 33.1756 0.00419978H29.6136C28.8678 -0.034699 28.1303 0.197413 27.5067 0.667318C26.8832 1.13722 26.4055 1.82084 26.142 2.62033C25.3754 4.70967 24.4156 6.69912 23.2791 8.55468V3.77781C23.2791 3.16097 23.2283 2.12685 22.6497 1.25602C21.9586 0.211023 20.9583 0.00419978 20.264 0.00419978H14.611C13.8734 -0.0152246 13.1575 0.290779 12.6115 0.858839C12.0656 1.4269 11.7315 2.2135 11.6784 3.05574L11.6736 3.13738V3.21902C11.6736 4.09893 11.978 4.74842 12.2221 5.15662C12.3315 5.33986 12.4472 5.50677 12.5217 5.612L12.5376 5.63558C12.6168 5.74806 12.6691 5.82245 12.7214 5.9059C12.8609 6.11998 13.0591 6.4538 13.1162 7.31375V9.98612C11.9814 7.81143 11.051 5.50539 10.3404 3.10654L10.3278 3.06663L10.3151 3.02853C10.1217 2.44979 9.81255 1.60798 9.19273 0.965744C8.46987 0.212837 7.61384 0.00419978 6.8355 0.00419978H3.22118C2.43332 0.00419978 1.48377 0.214652 0.775176 1.06916C0.0792613 1.91096 0 2.91967 0 3.45306V3.69617L0.0443863 3.93202C1.04514 9.24913 3.10742 14.2291 6.06983 18.4822C7.42421 20.9265 9.26293 22.9711 11.4369 24.4501C13.6108 25.929 16.0587 26.8008 18.582 26.9946L18.647 27H18.7136C19.8645 27 21.0645 26.8857 21.9665 26.1981C23.1824 25.2692 23.2791 23.845 23.2791 23.1339V21.0693C23.5913 21.3595 23.9781 21.7478 24.4521 22.2703C25.026 22.927 25.4825 23.4967 25.8741 23.9938L26.0833 24.2587C26.3877 24.6469 26.6873 25.0297 26.96 25.3436C27.3024 25.7373 27.7256 26.1709 28.2551 26.492C28.8305 26.8385 29.4345 26.9964 30.0749 26.9964H33.6908C34.4533 26.9964 35.5455 26.7895 36.3144 25.7699C37.1514 24.6596 37.088 23.2971 36.8248 22.3193L36.7773 22.1433L36.7059 21.9782ZM27.6384 22.1705C27.1471 21.542 26.6413 20.9285 26.1214 20.3309L26.1166 20.3254C23.9655 17.9524 22.962 17.5406 22.2518 17.5406C21.873 17.5406 21.456 17.5878 21.185 17.976C21.0629 18.1612 20.9829 18.3781 20.9519 18.6074C20.9137 18.8735 20.8968 19.1432 20.9012 19.4129V23.1339C20.9012 23.5965 20.8346 23.7906 20.6476 23.9321C20.3987 24.1226 19.8676 24.2768 18.7279 24.2768C16.5628 24.1082 14.4636 23.3539 12.6028 22.076C10.7421 20.798 9.17295 19.0328 8.02442 16.9256L8.01174 16.902L7.99588 16.8802C5.23619 12.949 3.31288 8.33742 2.37784 3.40952C2.38418 3.17367 2.42857 3.03034 2.50149 2.94326C2.57599 2.85255 2.75829 2.72555 3.22118 2.72555H6.8355C7.23656 2.72555 7.44581 2.82715 7.59641 2.98136C7.76444 3.15915 7.91345 3.4585 8.091 3.99189C8.97873 6.97812 10.1772 9.77203 11.3138 11.8239C11.8813 12.8508 12.4393 13.7053 12.9434 14.3094C13.1954 14.6106 13.4411 14.861 13.6773 15.0388C13.904 15.2093 14.1624 15.3454 14.4287 15.3454C14.5682 15.3454 14.7315 15.3272 14.8885 15.2492C15.0579 15.1635 15.1975 15.0153 15.2848 14.8283C15.448 14.4872 15.494 13.9847 15.494 13.3261V7.20671C15.41 5.72266 15.0184 4.8863 14.638 4.29305C14.5609 4.17439 14.4817 4.05764 14.4002 3.9429L14.3796 3.91387C14.312 3.8199 14.2475 3.72308 14.1862 3.6236C14.1082 3.51265 14.0612 3.37734 14.0515 3.23535C14.0639 3.09119 14.124 2.95791 14.2195 2.8628C14.315 2.76769 14.4386 2.71794 14.5651 2.72374H20.264C20.5905 2.72374 20.6999 2.81445 20.7554 2.89972C20.8346 3.01764 20.9012 3.26256 20.9012 3.77781V11.9927C20.9012 12.9687 21.2944 13.6291 21.865 13.6291C22.5213 13.6291 22.9953 13.1737 23.8228 12.2267L23.8371 12.2086L23.8497 12.1922C25.706 9.60201 27.2226 6.7161 28.3518 3.62541L28.3581 3.60364C28.443 3.33057 28.6036 3.09677 28.8154 2.9379C29.0272 2.77903 29.2786 2.70382 29.5312 2.72374H33.1772C33.6718 2.72374 33.8335 2.86888 33.8874 2.95414C33.9429 3.04486 33.9825 3.23898 33.8874 3.61997C32.5853 6.95155 30.9756 10.1142 29.0857 13.054L29.0731 13.0758C28.8908 13.3969 28.6894 13.7525 28.6609 14.1589C28.6292 14.5979 28.7941 14.9952 29.0842 15.4234C29.295 15.779 29.7309 16.267 30.1732 16.7623L30.2144 16.8094C30.6773 17.3283 31.1798 17.8907 31.5825 18.435L31.5936 18.4477L31.6047 18.4622C32.8053 19.8328 33.8038 21.4173 34.5611 23.1538C34.6816 23.6255 34.6087 23.8686 34.5136 23.9938C34.4042 24.139 34.1585 24.275 33.6924 24.275H30.0749C29.8284 24.2819 29.5844 24.2163 29.3663 24.0845C29.0991 23.9066 28.8565 23.684 28.6466 23.4241C28.4199 23.1647 28.1742 22.8508 27.873 22.468L27.64 22.1705H27.6384Z"
+									fill="#EEFFF1" />
+							</svg>
+						</a>
+						<a href="#" class="actions-header__social">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M25.9271 0.00286689C25.5813 0.0308752 25.2419 0.121191 24.9221 0.27029H24.9178C24.6108 0.4058 23.1512 1.08935 20.9323 2.12546L12.9806 5.85379C7.27481 8.52802 1.66598 11.1615 1.66598 11.1615L1.73277 11.1327C1.73277 11.1327 1.34607 11.2742 0.942126 11.5824C0.692576 11.7592 0.477837 11.9905 0.310904 12.2624C0.112705 12.5861 -0.0467164 13.0814 0.012528 13.5935C0.109473 14.4593 0.613589 14.9786 0.975518 15.2652C1.34176 15.5554 1.69076 15.6909 1.69076 15.6909H1.69938L6.9592 17.6636C7.1951 18.5066 8.56203 23.5097 8.89057 24.6621C9.08446 25.3505 9.27296 25.781 9.50886 26.1096C9.62304 26.2775 9.75661 26.4178 9.91711 26.5305C10.0005 26.5845 10.0895 26.6272 10.1821 26.6576L10.1282 26.6432C10.1444 26.648 10.1573 26.6624 10.1692 26.6672C10.2123 26.6804 10.2413 26.6852 10.2963 26.6948C11.1289 26.9754 11.7979 26.3998 11.7979 26.3998L11.8356 26.3662L14.941 23.2183L20.1459 27.6638L20.2644 27.7201C21.3491 28.2502 22.4478 27.9552 23.0284 27.4347C23.6133 26.9107 23.8406 26.2403 23.8406 26.2403L23.8783 26.1324L27.9005 3.19276C28.0147 2.62673 28.0437 2.09668 27.9177 1.58222C27.7877 1.06156 27.4877 0.613751 27.0764 0.326652C26.7311 0.0929451 26.3307 -0.0198598 25.9271 0.00286689ZM25.8183 2.46124C25.814 2.53679 25.8269 2.5284 25.7968 2.6735V2.68669L21.8123 25.3877C21.7951 25.42 21.766 25.4908 21.6863 25.5616C21.6023 25.6359 21.5355 25.6827 21.1854 25.528L14.8193 20.0944L10.9738 23.9966L11.7817 18.2524L22.1829 7.45953C22.6116 7.01582 22.4683 6.92229 22.4683 6.92229C22.4985 6.37785 21.8209 6.76279 21.8209 6.76279L8.70529 15.8084L8.70099 15.7844L2.41462 13.428V13.4232L2.39846 13.4196C2.40948 13.4155 2.42027 13.4107 2.43078 13.4052L2.46525 13.386L2.49864 13.3728C2.49864 13.3728 8.11177 10.7394 13.8175 8.06513C16.6742 6.72562 19.5524 5.37651 21.766 4.3356C23.0788 3.72041 24.3929 3.10881 25.7084 2.50081C25.7968 2.46244 25.7548 2.46124 25.8183 2.46124Z"
+									fill="#EEFFF1" />
+							</svg>
+						</a>
+					</div>
+					<a href="#" data-lang="connect" class="actions-header__btn btn-small">Связаться</a>
+					<div class="actions-header__dropdown">
+						<div class="actions-header__select">
+							<span class="actions-header__selected">RU</span>
+							<div class="actions-header__caret">
+								<svg width="10" height="12" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.197629 0.207851C0.329381 0.0692835 0.485376 -4.15897e-07 0.665613 -4.08019e-07C0.84585 -4.00141e-07 1.00167 0.0692836 1.13307 0.207852L4.99341 4.26789L8.86693 0.193995C8.9899 0.0646649 9.14361 -3.7434e-08 9.32806 -2.93713e-08C9.51252 -2.13086e-08 9.67062 0.069284 9.80237 0.207852C9.93412 0.34642 10 0.510484 10 0.700045C10 0.889606 9.93412 1.05349 9.80237 1.19168L5.36232 5.84757C5.30962 5.90299 5.25253 5.94235 5.19104 5.96563C5.12956 5.98891 5.06368 6.00036 4.99341 5.99999C4.92314 5.99999 4.85727 5.98835 4.79578 5.96507C4.7343 5.94179 4.67721 5.90263 4.62451 5.84757L0.184454 1.17783C0.061485 1.0485 3.9638e-07 0.889051 4.04666e-07 0.69949C4.12952e-07 0.509929 0.0658766 0.34605 0.197629 0.207851Z"
+										fill="white" />
+								</svg>
+							</div>
+						</div>
+						<ul class="actions-header__menu-list">
+							<li data-btn="en" class="actions-header__menu-item">EN</li>
+							<li data-btn="ru" class="actions-header__menu-item">RU</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="main">
+			<section id="main" class="ai">
+				<div class="ai__container">
+					<div data-lang="main-title" class="ai__title title _anim-items">
+						Внедрение <span>искуственного интеллекта</span> в бизнес
+					</div>
+					<div class="ai__row">
+						<div class="ai__column _anim-items">
+							<p class="ai__desc">Здесь будет какое-то описание</p>
+						</div>
+						<div class="ai__column">
+							<div class="ai__image _anim-items"><img src="./img/ai/robot.png" alt="Artificial intelligence">
+							</div>
+						</div>
+						<div class="ai__column _anim-items">
+							<p class="ai__desc">
+								Здесь будет какое-то описание
+							</p>
+						</div>
+					</div>
+					<div class="ai__wrap">
+						<a href="#" data-lang="connect" class="ai__btn btn _anim-items">Получить консультацию</a>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="about__container">
+					<h2 data-lang="about" class="about__title title _anim-items">О компании</h2>
+					<div class="about__row">
+						<div class="about__column _anim-items">
+							<div class="about__item item-about">
+								<div data-lang="itm-ab-t-1" class="item-about__title">3 года</div>
+								<div data-lang="itm-ab-l-1" class="item-about__label">УСПЕШНОГО</div>
+								<p data-lang="itm-ab-d-1" class="item-about__desc">
+									внедрения и разработки решений на базе <span>ИИ</span> в
+									бизнес-процессы
+								</p>
+								<div class="item-about__img"><img src="./img/about/01.png" alt="Кубок успеха"></div>
+							</div>
+						</div>
+						<div class="about__column _anim-items">
+							<div class="about__item item-about">
+								<div data-lang="itm-ab-t-2" class="item-about__title">ПРЕДОСТАВЛЯЕТ</div>
+								<div data-lang="itm-ab-l-2" class="item-about__label">УСЛУГИ</div>
+								<p data-lang="itm-ab-d-2" class="item-about__desc">
+									в различных секторах <span>экономики</span>
+								</p>
+								<div class="item-about__img"><img src="./img/about/02.png" alt="Предоставление услуг"></div>
+							</div>
+						</div>
+						<div class="about__column _anim-items">
+							<div class="about__item item-about">
+								<div data-lang="itm-ab-t-3" class="item-about__title">AIBS</div>
+								<div data-lang="itm-ab-l-3" class="item-about__label">ПРОВОДИТ</div>
+								<p data-lang="itm-ab-d-3" class="item-about__desc">
+									экспертизу в области <span>машинного обучения,</span> анализ данных и автоматизирует бизнес
+									процессы
+								</p>
+								<div class="item-about__img"><img src="./img/about/03.png"
+										alt="Проведение жкспертизы в сфере Искуственного интеллекта"></div>
+							</div>
+						</div>
+						<div class="about__column _anim-items">
+							<div class="about__item item-about">
+								<div data-lang="itm-ab-t-4" class="item-about__title">ПОМОГАЕТ</div>
+								<div data-lang="itm-ab-l-4" class="item-about__label">КЛИЕНТАМ</div>
+								<p data-lang="itm-ab-d-4" class="item-about__desc">
+									увеличить <span>эффективность</span> своих процессов, повысить <span>качество</span>
+									продукции и услуг, а также
+									оптимизировать <span>расходы</span>
+								</p>
+								<div class="item-about__img"><img src="./img/about/04.png" alt="Помощь клиентам, график роста">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="advantages" class="advantages">
+				<div class="advantages__container">
+					<h2 data-lang="prevences" class="advantages__title title _anim-items">Преимущества</h2>
+					<div class="advantages__row">
+						<div class="advantages__column _anim-items">
+							<div class="advantages__item item-advantages">
+								<div data-lang="itm-adv-l-1" class="item-advantages__label">3 ГОДА</div>
+								<div data-lang="itm-adv-t-1" class="item-advantages__title">Успешной работы</div>
+								<p data-lang="itm-adv-txt-1" class="item-advantages__text">
+									Наш опыт говорит за нас. За 3 года мы поработали с маленькими
+									стартапами и с именитыми брендами.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__column _anim-items">
+							<div class="advantages__item item-advantages">
+								<div data-lang="itm-adv-l-2" class="item-advantages__label">К КАЖДОМУ</div>
+								<div data-lang="itm-adv-t-2" class="item-advantages__title">Индивидуальный подход</div>
+								<p data-lang="itm-adv-txt-2" class="item-advantages__text">
+									Каждая компания имеет свою концепция и нишу, но мы находим подход даже к самым трудным
+									проектам.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__column _anim-items">
+							<div class="advantages__item item-advantages">
+								<div data-lang="itm-adv-l-3" class="item-advantages__label">ДОЛГОСРОЧНЫЙ</div>
+								<div data-lang="itm-adv-t-3" class="item-advantages__title">Непрерывный рост</div>
+								<p data-lang="itm-adv-txt-3" class="item-advantages__text">
+									Наши опытные профессионалы помогут расти вашему бизнесу, внедряя новые технологии работы с
+									ИИ.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__column _anim-items">
+							<div class="advantages__item item-advantages">
+								<div data-lang="itm-adv-l-4" class="item-advantages__label">ГЛАВНАЯ ИНФОРМАЦИЯ</div>
+								<div data-lang="itm-adv-t-4" class="item-advantages__title">Налоговые льготы при внедрении
+									отечественных IT - решений
+								</div>
+								<p data-lang="itm-adv-txt-4" class="item-advantages__text">
+									С 1 января 2023 года при покупке и внедрении отечественных решений, можно воспользоваться
+									налоговыми льготами и направить дополнительные средства на технологическое обновление.
+									Об этом заявил <span>Президент РФ Владимир Путин</span> на конференции «Путешествие в мир
+									искусственного
+									интеллекта».
+									<br><br>
+									При расчете налога на прибыль не будет учитываться сумма, в 1,5 раза превышающая фактические
+									расходы компании на приобретение передовых российских разработок.
+									<br><br>
+									Если решение на базе ИИ будет стоить 10 млн рублей, то 15 млн прибыли вашей компании не будут
+									облагаться налогом на прибыль. <span>Экономия</span> составит <span>3 млн рублей.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" data-lang="connect" class="advantages__btn btn _anim-items">СВЯЗАТЬСЯ</a>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="services__container">
+					<h2 data-lang="services" class="services__title title _anim-items">Услуги</h2>
+					<div class="services__main main-services _anim-items">
+						<p data-lang="main-s-txt-1" class="main-services__text _anim-items">
+							<span>Разработка и внедрение систем машинного обучения</span> представляет собой
+							комплексную работу по созданию и внедрению искусственного интеллекта (ИИ) в бизнес-процессы
+							заказчика. Наша команда профессионалов занимается разработкой ИИ, который будет оптимизировать
+							работу вашей компании и повышать ее эффективность.
+							Наши <span>услуги включают в себя</span> следующие этапы:
+						</p>
+						<div class="main-services__row">
+							<div class="main-services__column">
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">01</div>
+										<div data-lang="main-s-l-1" class="main-services__label">Анализ бизнес-процессов
+											заказчика.</div>
+									</div>
+									<div data-lang="main-s-d-1" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">02</div>
+										<div data-lang="main-s-l-2" class="main-services__label">Разработка концепции</div>
+									</div>
+									<div data-lang="main-s-d-2" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">03</div>
+										<div data-lang="main-s-l-3" class="main-services__label">Создание модели машинного
+											обучения</div>
+									</div>
+									<div data-lang="main-s-d-3" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+							</div>
+							<div class="main-services__column _anim-items">
+								<div class="main-services__item _anim-items">
+									<div class="main-services__img _anim-items">
+										<img src="./img/services/01.png"
+											alt="Разработка и внедрение систем машинного обучения в бизнес">
+									</div>
+									<div data-lang="main-s-title" class="main-services__title _anim-items">
+										<span>Разработка и внедрение</span> систем машинного
+										обучения в бизнес
+									</div>
+									<div data-lang="main-s-sub-title" class="main-services__sub-title _anim-items">
+										Наш опыт говорит за нас. За 3 года мы поработали с
+										маленькими стартапами и с именитыми брендами.
+									</div>
+								</div>
+							</div>
+							<div class="main-services__column">
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">04</div>
+										<div data-lang="main-s-l-4" class="main-services__label">Тестирование и оптимизация</div>
+									</div>
+									<div data-lang="main-s-d-4" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">05</div>
+										<div data-lang="main-s-l-5" class="main-services__label">Внедрение и обучение персонала
+										</div>
+									</div>
+									<div data-lang="main-s-d-5" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+								<div class="main-services__item _anim-items">
+									<div class="main-services__content">
+										<div class="main-services__value">06</div>
+										<div data-lang="main-s-l-6" class="main-services__label">Внедрение и обучение персонала
+										</div>
+									</div>
+									<div data-lang="main-s-d-6" class="main-services__desc">Наш опыт говорит за нас. За 3 года мы
+										поработали с
+										маленькими стартапами и с именитыми брендами.</div>
+								</div>
+							</div>
+						</div>
+						<p data-lang="main-s-txt-2" class="main-services__text _anim-items">
+							<span>Наша команда</span> готова предложить вам самые передовые решения в области машинного
+							обучения и создать
+							для вас наиболее эффективную систему ИИ, которая поможет оптимизировать работу вашего бизнеса. С
+							нами вы получите высококачественный продукт, который будет соответствовать всем вашим требованиям и
+							пожеланиям.
+						</p>
+					</div>
+					<div class="services__rest rest-services">
+						<h3 class="rest-services__title small-title _anim-items">Остальные <span>услуги</span></h3>
+						<div class="rest-services__row">
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/02.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Анализ</span> бизнес-процессов и <span>определение</span>
+									областей
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/03.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Создание</span> интеллектуальных алгоритмов для автоматизации бизнес-процессов
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/04.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Разработка</span> решений на базе нейронных сетей
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/05.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Внедрение</span>системы распознования образов и голоса
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/06.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Создание</span> системы анализа данных
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/07.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Разработка </span>системы управления ресурсами
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/08.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Обучение персонала</span> работе с системами ИИ по внедрению технологий в
+									бизнес-процессы
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/09.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Интеграция ИИ-технологий</span> с существующими системами управления, CRM и
+									ERP-системами
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+							<article class="rest-services__column _anim-items">
+								<div class="rest-services__image">
+									<img src="./img/services/10.png" alt="Анализ бизнес-процессов и определение областей">
+								</div>
+								<h4 class="rest-services__label">
+									<span>Создание и обучение ИИ</span> моделей для решения конкретных задач
+								</h4>
+								<p class="rest-services__desc">
+									Помогает понять, где применить <span>ИИ</span> для оптимизации
+									работы и увеличения эффективности
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="cases" class="cases">
+				<div class="cases__container">
+					<h2 class="cases__title title _anim-items">Наши кейсы</h2>
+					<div class="cases__row">
+						<div class="cases__actions _anim-items">
+							<p class="cases__clue"><span>Листайте</span>, чтобы увидеть все кейсы</p>
+							<div class="cases__arrows">
+								<button type="button" class="cases__arrow cases__prev">
+									<div>
+										<svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.292893 7.29289C-0.097631 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM2 7H1L1 9H2L2 7Z"
+												fill="white" />
+										</svg>
+
+									</div>
+								</button>
+								<button type="button" class="cases__arrow cases__next">
+									<div>
+										<svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M8.70711 8.70711C9.09763 8.31658 9.09763 7.68342 8.70711 7.29289L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L6.58579 8L0.928932 13.6569C0.538408 14.0474 0.538408 14.6805 0.928932 15.0711C1.31946 15.4616 1.95262 15.4616 2.34315 15.0711L8.70711 8.70711ZM7 9H8V7H7V9Z"
+												fill="white" />
+										</svg>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="cases__slider swiper _anim-items">
+						<div class="cases__wrapper swiper-wrapper">
+							<div class="cases__slide swiper-slide slide-cases">
+								<div class="slide-cases__top top-slide-cases">
+									<div class="top-slide-cases__img"><img src="./img/cases/01.png" alt="Компания"></div>
+									<div class="top-slide-cases__body">
+										<div class="top-slide-cases__name">Mastercard Inc</div>
+										<div class="top-slide-cases__desc">международная платёжная система</div>
+									</div>
+								</div>
+								<div class="slide-cases__request request-slide-cases">
+									<div class="request-slide-cases__title">Запрос от компании</div>
+									<div class="request-slide-cases__text">
+										Необходимо сократить свои платежи по налогам, увеличить эффективность своих процессов,
+										повысить качество продукции и услуг, а также оптимизировать расходы
+									</div>
+								</div>
+								<div class="slide-cases__midle midle-slide-cases">
+									<div class="midle-slide-cases__title">Что сделали?</div>
+									<ul class="midle-slide-cases__list">
+										<li class="midle-slide-cases__paragraph">Повысили качество продукции и услуг</li>
+										<li class="midle-slide-cases__paragraph">Оптимизировали расходы</li>
+										<li class="midle-slide-cases__paragraph">Внедрили искуственный интеллект</li>
+										<li class="midle-slide-cases__paragraph">Сократили платежи по налогам</li>
+									</ul>
+								</div>
+								<div class="slide-cases__footer footer-slide-cases">
+									<div class="footer-slide-cases__title">Результат:</div>
+									<p class="footer-slide-cases__text">
+										Выявили самые слабые места, настроили ИИ и решили
+										проблему компании
+									</p>
+								</div>
+							</div>
+							<div class="cases__slide swiper-slide slide-cases">
+								<div class="slide-cases__top top-slide-cases">
+									<div class="top-slide-cases__img"><img src="./img/cases/01.png" alt="Компания"></div>
+									<div class="top-slide-cases__body">
+										<div class="top-slide-cases__name">Mastercard Inc</div>
+										<div class="top-slide-cases__desc">международная платёжная система</div>
+									</div>
+								</div>
+								<div class="slide-cases__request request-slide-cases">
+									<div class="request-slide-cases__title">Запрос от компании</div>
+									<div class="request-slide-cases__text">
+										Необходимо сократить свои платежи по налогам, увеличить эффективность своих процессов,
+										повысить качество продукции и услуг, а также оптимизировать расходы
+									</div>
+								</div>
+								<div class="slide-cases__midle midle-slide-cases">
+									<div class="midle-slide-cases__title">Что сделали?</div>
+									<ul class="midle-slide-cases__list">
+										<li class="midle-slide-cases__paragraph">Повысили качество продукции и услуг</li>
+										<li class="midle-slide-cases__paragraph">Оптимизировали расходы</li>
+										<li class="midle-slide-cases__paragraph">Внедрили искуственный интеллект</li>
+										<li class="midle-slide-cases__paragraph">Сократили платежи по налогам</li>
+									</ul>
+								</div>
+								<div class="slide-cases__footer footer-slide-cases">
+									<div class="footer-slide-cases__title">Результат:</div>
+									<p class="footer-slide-cases__text">
+										Выявили самые слабые места, настроили ИИ и решили
+										проблему компании
+									</p>
+								</div>
+							</div>
+							<div class="cases__slide swiper-slide slide-cases">
+								<div class="slide-cases__top top-slide-cases">
+									<div class="top-slide-cases__img"><img src="./img/cases/01.png" alt="Компания"></div>
+									<div class="top-slide-cases__body">
+										<div class="top-slide-cases__name">Mastercard Inc</div>
+										<div class="top-slide-cases__desc">международная платёжная система</div>
+									</div>
+								</div>
+								<div class="slide-cases__request request-slide-cases">
+									<div class="request-slide-cases__title">Запрос от компании</div>
+									<div class="request-slide-cases__text">
+										Необходимо сократить свои платежи по налогам, увеличить эффективность своих процессов,
+										повысить качество продукции и услуг, а также оптимизировать расходы
+									</div>
+								</div>
+								<div class="slide-cases__midle midle-slide-cases">
+									<div class="midle-slide-cases__title">Что сделали?</div>
+									<ul class="midle-slide-cases__list">
+										<li class="midle-slide-cases__paragraph">Повысили качество продукции и услуг</li>
+										<li class="midle-slide-cases__paragraph">Оптимизировали расходы</li>
+										<li class="midle-slide-cases__paragraph">Внедрили искуственный интеллект</li>
+										<li class="midle-slide-cases__paragraph">Сократили платежи по налогам</li>
+									</ul>
+								</div>
+								<div class="slide-cases__footer footer-slide-cases">
+									<div class="footer-slide-cases__title">Результат:</div>
+									<p class="footer-slide-cases__text">
+										Выявили самые слабые места, настроили ИИ и решили
+										проблему компании
+									</p>
+								</div>
+							</div>
+							<div class="cases__slide swiper-slide slide-cases">
+								<div class="slide-cases__top top-slide-cases">
+									<div class="top-slide-cases__img"><img src="./img/cases/01.png" alt="Компания"></div>
+									<div class="top-slide-cases__body">
+										<div class="top-slide-cases__name">Mastercard Inc</div>
+										<div class="top-slide-cases__desc">международная платёжная система</div>
+									</div>
+								</div>
+								<div class="slide-cases__request request-slide-cases">
+									<div class="request-slide-cases__title">Запрос от компании</div>
+									<div class="request-slide-cases__text">
+										Необходимо сократить свои платежи по налогам, увеличить эффективность своих процессов,
+										повысить качество продукции и услуг, а также оптимизировать расходы
+									</div>
+								</div>
+								<div class="slide-cases__midle midle-slide-cases">
+									<div class="midle-slide-cases__title">Что сделали?</div>
+									<ul class="midle-slide-cases__list">
+										<li class="midle-slide-cases__paragraph">Повысили качество продукции и услуг</li>
+										<li class="midle-slide-cases__paragraph">Оптимизировали расходы</li>
+										<li class="midle-slide-cases__paragraph">Внедрили искуственный интеллект</li>
+										<li class="midle-slide-cases__paragraph">Сократили платежи по налогам</li>
+									</ul>
+								</div>
+								<div class="slide-cases__footer footer-slide-cases">
+									<div class="footer-slide-cases__title">Результат:</div>
+									<p class="footer-slide-cases__text">
+										Выявили самые слабые места, настроили ИИ и решили
+										проблему компании
+									</p>
+								</div>
+							</div>
+							<div class="cases__slide swiper-slide slide-cases">
+								<div class="slide-cases__top top-slide-cases">
+									<div class="top-slide-cases__img"><img src="./img/cases/01.png" alt="Компания"></div>
+									<div class="top-slide-cases__body">
+										<div class="top-slide-cases__name">Mastercard Inc</div>
+										<div class="top-slide-cases__desc">международная платёжная система</div>
+									</div>
+								</div>
+								<div class="slide-cases__request request-slide-cases">
+									<div class="request-slide-cases__title">Запрос от компании</div>
+									<div class="request-slide-cases__text">
+										Необходимо сократить свои платежи по налогам, увеличить эффективность своих процессов,
+										повысить качество продукции и услуг, а также оптимизировать расходы
+									</div>
+								</div>
+								<div class="slide-cases__midle midle-slide-cases">
+									<div class="midle-slide-cases__title">Что сделали?</div>
+									<ul class="midle-slide-cases__list">
+										<li class="midle-slide-cases__paragraph">Повысили качество продукции и услуг</li>
+										<li class="midle-slide-cases__paragraph">Оптимизировали расходы</li>
+										<li class="midle-slide-cases__paragraph">Внедрили искуственный интеллект</li>
+										<li class="midle-slide-cases__paragraph">Сократили платежи по налогам</li>
+									</ul>
+								</div>
+								<div class="slide-cases__footer footer-slide-cases">
+									<div class="footer-slide-cases__title">Результат:</div>
+									<p class="footer-slide-cases__text">
+										Выявили самые слабые места, настроили ИИ и решили
+										проблему компании
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cases__pagination _anim-items"></div>
+				</div>
+			</section>
+			<section class="consultation">
+				<div class="consultation__container">
+					<h2 class="consultation__title title _anim-items">Нужна консультация?</h2>
+					<p class="consultation__desc _anim-items">Свяжемся и расскажем всё по телефону</p>
+					<div class="consultation__row">
+						<picture class="consultation__img _anim-items">
+							<source srcset="./img/consultation/hand.png" type="image/png" media="(min-width:993px)">
+							<source srcset="./img/consultation/hand-down.png" type="image/png" media="(max-width:992px)">
+							<img src="./img/consultation/hand.png" alt="Указатель на заполнение формы обратной связи">
+						</picture>
+						<form action="#" class="consultation__form contact-form _anim-items">
+							<h3 class="contact-form__title title-form">Заполните форму</h3>
+							<div class="contact-form__group">
+								<input type="text" required placeholder="Введите имя" class="contact-form__input"></input>
+							</div>
+							<div class="contact-form__group">
+								<input type="tel" required placeholder="Номер телефона" class="contact-form__input"></input>
+							</div>
+							<div class="contact-form__group">
+								<input type="email" required placeholder="Электронная почта"
+									class="contact-form__input"></input>
+							</div>
+							<button class="contact-form__btn btn">Отправить</button>
+							<div class="contact-form__checkbox-wrap">
+								<div class="contact-form__body">
+									<input type="checkbox" required id="confidentiality" class="contact-form__checkbox-input">
+									<label for="confidentiality" required class="contact-form__confidentiality">
+										Нажимая на кнопку, вы даете согласие на обработку
+										персональных данных и соглашаетесь с политикой конфиденциальности
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section id="faq" class="faq">
+				<div class="faq__container">
+					<h2 class="faq__title title _anim-items">Часто задаваемые вопросы</h2>
+					<ul class="faq__list">
+						<li class="faq__item _anim-items">
+							<button class="faq__control" aria-expanded="false">
+								<span class="faq__question">Каким образом внедряется искуственный интеллект?</span>
+								<span class="faq__icon"></span>
+							</button>
+							<div class="faq__content" aria-hidden="true">
+								Искусственный интеллект способен справиться с широким спектром задач: от распознавания речи и
+								образов до анализа данных и построения
+							</div>
+						</li>
+						<li class="faq__item _anim-items">
+							<button class="faq__control" aria-expanded="false">
+								<span class="faq__question">Каким образом внедряется искуственный интеллект?</span>
+								<span class="faq__icon"></span>
+							</button>
+							<div class="faq__content" aria-hidden="true">
+								Искусственный интеллект способен справиться с широким спектром задач: от распознавания речи и
+								образов до анализа данных и построения
+							</div>
+						</li>
+						<li class="faq__item _anim-items">
+							<button class="faq__control" aria-expanded="false">
+								<span class="faq__question">Каким образом внедряется искуственный интеллект?</span>
+								<span class="faq__icon"></span>
+							</button>
+							<div class="faq__content" aria-hidden="true">
+								Искусственный интеллект способен справиться с широким спектром задач: от распознавания речи и
+								образов до анализа данных и построения
+							</div>
+						</li>
+						<li class="faq__item _anim-items">
+							<button class="faq__control" aria-expanded="false">
+								<span class="faq__question">Каким образом внедряется искуственный интеллект?</span>
+								<span class="faq__icon"></span>
+							</button>
+							<div class="faq__content" aria-hidden="true">
+								Искусственный интеллект способен справиться с широким спектром задач: от распознавания речи и
+								образов до анализа данных и построения
+							</div>
+						</li>
+						<li class="faq__item _anim-items">
+							<button class="faq__control" aria-expanded="false">
+								<span class="faq__question">Каким образом внедряется искуственный интеллект?</span>
+								<span class="faq__icon"></span>
+							</button>
+							<div class="faq__content" aria-hidden="true">
+								Искусственный интеллект способен справиться с широким спектром задач: от распознавания речи и
+								образов до анализа данных и построения
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<a href="#" class="footer__logo">
+						<img src="./img/header/logo.png" alt="Artifical Intelligence Business Solutions">
+					</a>
+					<p class="footer__desc">Artifical Intelligence Business Solutions</p>
+				</div>
+				<div class="footer__column">
+					<p class="footer__label">Категории</p>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#main" data-lang="main-menu" class="menu-footer__link">Главная</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#about" data-lang="about" class="menu-footer__link">О компании</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#advantages" data-lang="prevences" class="menu-footer__link">Преимушества</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#services" data-lang="services" class="menu-footer__link">Услуги</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#cases" data-lang="cases" class="menu-footer__link">Кейсы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#faq" data-lang="faq" class="menu-footer__link">Ответы на вопросы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<p class="footer__label">Мы в соц сетях</p>
+					<div class="footer__socials">
+						<a href="#" class="footer__social">
+							<svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M36.7059 21.9782C35.8436 19.9906 34.7072 18.1749 33.3405 16.6008C32.8834 16.0096 32.4047 15.4406 31.9059 14.8954L31.8456 14.8283C31.6604 14.6224 31.4776 14.4138 31.2971 14.2024C33.1655 11.229 34.7642 8.04554 36.0687 4.70125L36.121 4.567L36.1574 4.42549C36.3302 3.76692 36.5268 2.5151 35.8293 1.38302C35.1064 0.214651 33.9508 0.00419978 33.1756 0.00419978H29.6136C28.8678 -0.034699 28.1303 0.197413 27.5067 0.667318C26.8832 1.13722 26.4055 1.82084 26.142 2.62033C25.3754 4.70967 24.4156 6.69912 23.2791 8.55468V3.77781C23.2791 3.16097 23.2283 2.12685 22.6497 1.25602C21.9586 0.211023 20.9583 0.00419978 20.264 0.00419978H14.611C13.8734 -0.0152246 13.1575 0.290779 12.6115 0.858839C12.0656 1.4269 11.7315 2.2135 11.6784 3.05574L11.6736 3.13738V3.21902C11.6736 4.09893 11.978 4.74842 12.2221 5.15662C12.3315 5.33986 12.4472 5.50677 12.5217 5.612L12.5376 5.63558C12.6168 5.74806 12.6691 5.82245 12.7214 5.9059C12.8609 6.11998 13.0591 6.4538 13.1162 7.31375V9.98612C11.9814 7.81143 11.051 5.50539 10.3404 3.10654L10.3278 3.06663L10.3151 3.02853C10.1217 2.44979 9.81255 1.60798 9.19273 0.965744C8.46987 0.212837 7.61384 0.00419978 6.8355 0.00419978H3.22118C2.43332 0.00419978 1.48377 0.214652 0.775176 1.06916C0.0792613 1.91096 0 2.91967 0 3.45306V3.69617L0.0443863 3.93202C1.04514 9.24913 3.10742 14.2291 6.06983 18.4822C7.42421 20.9265 9.26293 22.9711 11.4369 24.4501C13.6108 25.929 16.0587 26.8008 18.582 26.9946L18.647 27H18.7136C19.8645 27 21.0645 26.8857 21.9665 26.1981C23.1824 25.2692 23.2791 23.845 23.2791 23.1339V21.0693C23.5913 21.3595 23.9781 21.7478 24.4521 22.2703C25.026 22.927 25.4825 23.4967 25.8741 23.9938L26.0833 24.2587C26.3877 24.6469 26.6873 25.0297 26.96 25.3436C27.3024 25.7373 27.7256 26.1709 28.2551 26.492C28.8305 26.8385 29.4345 26.9964 30.0749 26.9964H33.6908C34.4533 26.9964 35.5455 26.7895 36.3144 25.7699C37.1514 24.6596 37.088 23.2971 36.8248 22.3193L36.7773 22.1433L36.7059 21.9782ZM27.6384 22.1705C27.1471 21.542 26.6413 20.9285 26.1214 20.3309L26.1166 20.3254C23.9655 17.9524 22.962 17.5406 22.2518 17.5406C21.873 17.5406 21.456 17.5878 21.185 17.976C21.0629 18.1612 20.9829 18.3781 20.9519 18.6074C20.9137 18.8735 20.8968 19.1432 20.9012 19.4129V23.1339C20.9012 23.5965 20.8346 23.7906 20.6476 23.9321C20.3987 24.1226 19.8676 24.2768 18.7279 24.2768C16.5628 24.1082 14.4636 23.3539 12.6028 22.076C10.7421 20.798 9.17295 19.0328 8.02442 16.9256L8.01174 16.902L7.99588 16.8802C5.23619 12.949 3.31288 8.33742 2.37784 3.40952C2.38418 3.17367 2.42857 3.03034 2.50149 2.94326C2.57599 2.85255 2.75829 2.72555 3.22118 2.72555H6.8355C7.23656 2.72555 7.44581 2.82715 7.59641 2.98136C7.76444 3.15915 7.91345 3.4585 8.091 3.99189C8.97873 6.97812 10.1772 9.77203 11.3138 11.8239C11.8813 12.8508 12.4393 13.7053 12.9434 14.3094C13.1954 14.6106 13.4411 14.861 13.6773 15.0388C13.904 15.2093 14.1624 15.3454 14.4287 15.3454C14.5682 15.3454 14.7315 15.3272 14.8885 15.2492C15.0579 15.1635 15.1975 15.0153 15.2848 14.8283C15.448 14.4872 15.494 13.9847 15.494 13.3261V7.20671C15.41 5.72266 15.0184 4.8863 14.638 4.29305C14.5609 4.17439 14.4817 4.05764 14.4002 3.9429L14.3796 3.91387C14.312 3.8199 14.2475 3.72308 14.1862 3.6236C14.1082 3.51265 14.0612 3.37734 14.0515 3.23535C14.0639 3.09119 14.124 2.95791 14.2195 2.8628C14.315 2.76769 14.4386 2.71794 14.5651 2.72374H20.264C20.5905 2.72374 20.6999 2.81445 20.7554 2.89972C20.8346 3.01764 20.9012 3.26256 20.9012 3.77781V11.9927C20.9012 12.9687 21.2944 13.6291 21.865 13.6291C22.5213 13.6291 22.9953 13.1737 23.8228 12.2267L23.8371 12.2086L23.8497 12.1922C25.706 9.60201 27.2226 6.7161 28.3518 3.62541L28.3581 3.60364C28.443 3.33057 28.6036 3.09677 28.8154 2.9379C29.0272 2.77903 29.2786 2.70382 29.5312 2.72374H33.1772C33.6718 2.72374 33.8335 2.86888 33.8874 2.95414C33.9429 3.04486 33.9825 3.23898 33.8874 3.61997C32.5853 6.95155 30.9756 10.1142 29.0857 13.054L29.0731 13.0758C28.8908 13.3969 28.6894 13.7525 28.6609 14.1589C28.6292 14.5979 28.7941 14.9952 29.0842 15.4234C29.295 15.779 29.7309 16.267 30.1732 16.7623L30.2144 16.8094C30.6773 17.3283 31.1798 17.8907 31.5825 18.435L31.5936 18.4477L31.6047 18.4622C32.8053 19.8328 33.8038 21.4173 34.5611 23.1538C34.6816 23.6255 34.6087 23.8686 34.5136 23.9938C34.4042 24.139 34.1585 24.275 33.6924 24.275H30.0749C29.8284 24.2819 29.5844 24.2163 29.3663 24.0845C29.0991 23.9066 28.8565 23.684 28.6466 23.4241C28.4199 23.1647 28.1742 22.8508 27.873 22.468L27.64 22.1705H27.6384Z"
+									fill="#EEFFF1" />
+							</svg>
+						</a>
+						<a href="#" class="footer__social">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M25.9271 0.00286689C25.5813 0.0308752 25.2419 0.121191 24.9221 0.27029H24.9178C24.6108 0.4058 23.1512 1.08935 20.9323 2.12546L12.9806 5.85379C7.27481 8.52802 1.66598 11.1615 1.66598 11.1615L1.73277 11.1327C1.73277 11.1327 1.34607 11.2742 0.942126 11.5824C0.692576 11.7592 0.477837 11.9905 0.310904 12.2624C0.112705 12.5861 -0.0467164 13.0814 0.012528 13.5935C0.109473 14.4593 0.613589 14.9786 0.975518 15.2652C1.34176 15.5554 1.69076 15.6909 1.69076 15.6909H1.69938L6.9592 17.6636C7.1951 18.5066 8.56203 23.5097 8.89057 24.6621C9.08446 25.3505 9.27296 25.781 9.50886 26.1096C9.62304 26.2775 9.75661 26.4178 9.91711 26.5305C10.0005 26.5845 10.0895 26.6272 10.1821 26.6576L10.1282 26.6432C10.1444 26.648 10.1573 26.6624 10.1692 26.6672C10.2123 26.6804 10.2413 26.6852 10.2963 26.6948C11.1289 26.9754 11.7979 26.3998 11.7979 26.3998L11.8356 26.3662L14.941 23.2183L20.1459 27.6638L20.2644 27.7201C21.3491 28.2502 22.4478 27.9552 23.0284 27.4347C23.6133 26.9107 23.8406 26.2403 23.8406 26.2403L23.8783 26.1324L27.9005 3.19276C28.0147 2.62673 28.0437 2.09668 27.9177 1.58222C27.7877 1.06156 27.4877 0.613751 27.0764 0.326652C26.7311 0.0929451 26.3307 -0.0198598 25.9271 0.00286689ZM25.8183 2.46124C25.814 2.53679 25.8269 2.5284 25.7968 2.6735V2.68669L21.8123 25.3877C21.7951 25.42 21.766 25.4908 21.6863 25.5616C21.6023 25.6359 21.5355 25.6827 21.1854 25.528L14.8193 20.0944L10.9738 23.9966L11.7817 18.2524L22.1829 7.45953C22.6116 7.01582 22.4683 6.92229 22.4683 6.92229C22.4985 6.37785 21.8209 6.76279 21.8209 6.76279L8.70529 15.8084L8.70099 15.7844L2.41462 13.428V13.4232L2.39846 13.4196C2.40948 13.4155 2.42027 13.4107 2.43078 13.4052L2.46525 13.386L2.49864 13.3728C2.49864 13.3728 8.11177 10.7394 13.8175 8.06513C16.6742 6.72562 19.5524 5.37651 21.766 4.3356C23.0788 3.72041 24.3929 3.10881 25.7084 2.50081C25.7968 2.46244 25.7548 2.46124 25.8183 2.46124Z"
+									fill="#EEFFF1" />
+							</svg>
+						</a>
+					</div>
+					<a href="#" data-lang="connect" class="footer__btn btn">Связаться</a>
+				</div>
+			</div>
+			<p class="footer__copy">Все права защищены © 2023</p>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/langs.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
